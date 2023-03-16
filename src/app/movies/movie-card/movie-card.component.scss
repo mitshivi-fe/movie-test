@@ -1,0 +1,50 @@
+.card{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    width: 300px;
+    font-size: 1rem;
+    .img-section{
+        img{
+            width: 100%;
+        }
+    }
+    .description-section{
+        color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        letter-spacing: 0.5px;
+        font-size: 2rem;
+        height: 8rem;
+        .rating{
+            background-color: #22254b;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 2.5px 5px;
+        }
+    }
+    .overview{
+        display: none;
+        background-color: #fff;
+        padding: 2rem;
+        position: absolute;
+        max-height: 100%;
+        overflow: auto;
+        bottom: 0;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+        font-size: 20px;
+    }
+    &:hover{
+        .overview{
+            transform: translateY(0);
+            display: block;
+            z-index: 2;
+        }
+    }
+}
