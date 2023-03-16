@@ -24,7 +24,7 @@ calculateStyle(avgVoting: number){
 
   return {
     
-    'color': avgVoting> 8 ? 'green' : 'yellow'
+    'color': avgVoting>= 7 ? 'green' : 'yellow'
   }
 }
 
